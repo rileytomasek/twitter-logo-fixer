@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Logo Fix",
+  "version": "1.0",
+  "description": "Replace the Twitter dog logo with the regular Twitter logo.",
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
